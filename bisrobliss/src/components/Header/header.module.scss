@@ -1,0 +1,111 @@
+@mixin image-block($defaultUrl) {
+    background-image: $defaultUrl;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 27px;
+    height: 27px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: auto;
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 45px;
+        background: #474747;
+        padding: 9px 154px 8px 150px;
+
+        .phone,
+        .mail {
+            display: flex;
+            gap: 8px;
+
+            p {
+                font: 400 16px DM Sans;
+                color: var(--neutral-02, #F9F9F7);
+                margin-right: 25px;
+            }
+        }
+
+        .imgphone {
+            background-image: url(../../../public/assets/Header/phone.svg);
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+        }
+
+        .imgmail {
+            background-image: url(../../../public/assets/Header/mail.svg);
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+        }
+
+        .images {
+            display: flex;
+            gap: 8px;
+            margin-left: 831px;
+
+            .imgtwitter {
+                @include image-block(url(../../../public/assets/Header/twit.svg));
+            }
+
+            .imgfacebook {
+                @include image-block(url(../../../public/assets/Header/faceb.svg));
+            }
+
+            .imgpinstagram {
+                @include image-block(url(../../../public/assets/Header/inst.svg));
+            }
+
+            .imgcompan {
+                @include image-block(url(../../../public/assets/Header/compan.svg));
+            }
+        }
+    }
+
+    .navig {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 84px;
+        background: #F9F9F7;
+        padding: 9px 154px 8px 150px;
+
+        .logo {
+            background-image: url(../../../public/assets/Header/logo.svg);
+            background-repeat: no-repeat;
+            width: 56px;
+            height: 56px;
+            margin-right: 8px;
+        }
+
+        h1 {
+            color: #474747;
+            font: 600 42px Playfair Display;
+            margin-right: 340px;
+        }
+
+        .elemnavig {
+            display: flex;
+            color: var(--neutral-07, #2C2F24);
+            font: 500 16px DM Sans;
+            gap: 40px;
+            margin-right: 340px;
+        }
+
+        .btnhed {
+            border-radius: 118px;
+            border: 1.5px solid var(--neutral-07, #2C2F24);
+            padding: 12px 24px;
+            color: var(--neutral-07, #182226);
+            text-align: right;
+            font: 700 16px DM Sans;
+        }
+    }
+}
