@@ -4,10 +4,81 @@
     max-width: 1600px;
     margin: auto;
 
-    .imgmain {
+    .title {
         background-image: url(../../public/assets/HomePage/main.svg);
         background-repeat: no-repeat;
         width: 1600px;
-        height: 2250px;
+        height: 800px;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            margin-top: 227px;
+            gap: 32px;
+
+            h1 {
+                width: 667px;
+                color: var(--neutral-07, #2C2F24);
+                text-align: center;
+                font: 400 100px Playfair Display;
+            }
+
+            p {
+                width: 537px;
+                color: var(--neutral-07, #2C2F24);
+                text-align: center;
+                font: 400 20px DM Sans;
+            }
+
+            .btns {
+                display: flex;
+                gap: 16px;
+
+                .btnbron {
+                    border-radius: 118px;
+                    background: #AD343E;
+                    color: var(--neutral-01, #FFF);
+                    text-align: right;
+                    font: 700 16px DM Sans;
+                    padding: 20px 32px;
+                }
+
+                .btnmenu {
+                    border-radius: 118px;
+                    border: 1.5px solid var(--neutral-07, #2C2F24);
+                    color: var(--neutral-07, #182226);
+                    text-align: right;
+                    font: 700 16px DM Sans;
+                    padding: 20px 32px;
+                }
+            }
+        }
     }
+
+    .blockmenu {
+        background: var(--neutral-01, #FFF);
+        width: 1600px;
+        height: 712px;
+
+        h1 {
+            color: var(--neutral-07, #2C2F24);
+            text-align: center;
+            font: 500 55px Playfair Display;
+        }
+    }
+
+    .services {
+        background: #F9F9F7;
+        width: 1600px;
+        height: 868px;
+
+        h1 {
+            color: var(--neutral-07, #2C2F24);           
+            font: 500 55px Playfair Display;
+            width: 600px;            
+        }
+    }
+
 }
