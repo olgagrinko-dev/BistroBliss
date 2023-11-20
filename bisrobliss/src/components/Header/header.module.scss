@@ -6,17 +6,17 @@
     height: 27px;
 }
 
-// @font-face {
-//     font-family: 'DM Sans';
-//     src: url(../../../public/fonts/DMSans-Bold.ttf) format('truetype'),
-//         url(../../../public/fonts/DMSans-Medium.ttf) format('truetype'),
-//         url(../../../public/fonts/DMSans-SemiBold.ttf) format('truetype'),
-//         url(../../../public/fonts/DMSans_24pt-Regular.ttf) format('truetype');
-//     font-family: 'Playfair Display';
-//     src: url(../../../public/fonts/PlayfairDisplay-Medium.ttf) format('truetype'),
-//         url(../../../public/fonts/PlayfairDisplay-Regular.ttf) format('truetype'),
-//         url(../../../public/fonts/PlayfairDisplay-SemiBoldItalic.ttf) format('truetype');
-// }
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../../../public/fonts/DMSans-Bold.ttf) format('truetype'),
+        url(../../../public/fonts/DMSans-Medium.ttf) format('truetype'),
+        url(../../../public/fonts/DMSans-SemiBold.ttf) format('truetype'),
+        url(../../../public/fonts/DMSans_24pt-Regular.ttf) format('truetype');
+    font-family: 'Playfair Display';
+    src: url(../../../public/fonts/PlayfairDisplay-Medium.ttf) format('truetype'),
+        url(../../../public/fonts/PlayfairDisplay-Regular.ttf) format('truetype'),
+        url(../../../public/fonts/PlayfairDisplay-SemiBoldItalic.ttf) format('truetype');
+}
 
 .header {
     display: flex;
@@ -27,6 +27,7 @@
     .info {
         display: flex;
         flex-direction: row;
+        // justify-content: flex-end;
         align-items: center;
         height: 45px;
         background: #474747;
@@ -91,16 +92,18 @@
 
         .logo {
             background-image: url(../../../public/assets/Header/logo.svg);
-            background-repeat: no-repeat;
+            background-repeat: no-repeat;           
             width: 56px;
             height: 56px;
-            margin-right: 8px;
+            margin-right: 8px;            
         }
 
         h1 {
             color: #474747;
             font: 600 42px Playfair Display;
+            font-style: italic;
             margin-right: 340px;
+            width: 211px;
         }
 
         .elemnavig {
@@ -112,6 +115,7 @@
         }
 
         .btnhed {
+            width: 147px;
             border-radius: 118px;
             border: 1.5px solid var(--neutral-07, #2C2F24);
             padding: 12px 24px;

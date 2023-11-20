@@ -29,7 +29,7 @@ export default function Header() {
                     {['Home', 'About', 'Menu'].map((el, index) => <p key={index}>{el}</p>)}
                 </div>
 
-                <button className={style.btnhed}>Book A Table</button>
+                <div className={style.btnhed}>Book A Table</div>
             </div>
         </div>
     )

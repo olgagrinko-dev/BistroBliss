@@ -1,3 +1,22 @@
+@mixin image-block($defaultmain) {
+    background-image: $defaultmain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+@mixin image-block2($defaultmenu) {
+    background-image: $defaultmenu;
+    background-repeat: no-repeat;
+    width: 306px;
+    height: 320px;
+    margin: auto;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -38,6 +57,7 @@
 
                 .btnbron {
                     border-radius: 118px;
+                    border : none;
                     background: #AD343E;
                     color: var(--neutral-01, #FFF);
                     text-align: right;
@@ -66,6 +86,66 @@
             color: var(--neutral-07, #2C2F24);
             text-align: center;
             font: 500 55px Playfair Display;
+            margin: auto;
+            margin-top: 92px;
+            margin-bottom: 64px;
+        }
+
+        .foodselection {
+            display: flex;
+            margin-left: 152px;
+            gap:24px;         
+
+            .breakfast,
+            .maindishes,
+            .drinks,
+            .desserts {
+                border-radius: 12px;
+                border: 1.5px solid var(--neutral-03, #DBDFD0);
+                background: var(--neutral-01, #FFF);
+                width: 306px;
+                height: 375px;               
+                padding: 34px;
+
+                .imgbreakfast {
+                    @include image-block(url(../../public/assets/HomePage/tea.svg));
+                }
+
+                .imgmaindishes {
+                    @include image-block(url(../../public/assets/HomePage/icon2.svg));
+                }
+
+                .imgdrinks {
+                    @include image-block(url(../../public/assets/HomePage/icon3.svg));
+                }
+
+                .imgdesserts {
+                    @include image-block(url(../../public/assets/HomePage/icon4.svg));
+                }
+
+                h2 {
+                    color: var(--neutral-07, #2C2F24);
+                    text-align: center;
+                    font: 700 24px DM Sans;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    color: var(--neutral-06, #414536);
+                    text-align: center;
+                    font: 400 16px DM Sans;
+                    width: 210px;
+                    margin-bottom: 30px;
+                }
+
+                .btnblock {
+                    color: #AD343E;
+                    text-align: center;
+                    font: 700 16px DM Sans;                   
+                    margin: auto;
+                    border : none
+                }
+            }
         }
     }
 
@@ -75,10 +155,65 @@
         height: 868px;
 
         h1 {
-            color: var(--neutral-07, #2C2F24);           
+            color: var(--neutral-07, #2C2F24);
             font: 500 55px Playfair Display;
-            width: 600px;            
+            width: 600px;
+            margin-top: 120px;
+            margin-left: 152px;
+            margin-bottom: 64px;
+        }
+
+        .events {
+            display: flex;
+            margin-left: 152px;
+            gap:24px;
+
+            .caterings,
+            .birthdays,
+            .weddings,
+            .event {
+
+                width: 306px;
+                height: 443px;
+
+                .imgcaterings {
+                    @include image-block2(url(../../public/assets/HomePage/kebab.svg));
+                }
+
+                .imgbirthdays {
+                    @include image-block2(url(../../public/assets/HomePage/birthday.svg));
+                }
+
+                .imgweddings {
+                    @include image-block2(url(../../public/assets/HomePage/happy.svg));
+                }
+
+                .imgevents {
+                    @include image-block2(url(../../public/assets/HomePage/group.svg));
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    h2 {
+                        color: var(--neutral-07, #2C2F24);
+                        text-align: center;
+                        font: 700 24px DM Sans;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        color: var(--neutral-06, #414536);
+                        font: 400 16px DM Sans;
+                        width: 230px;
+                    }
+
+                }
+
+            }
+
         }
     }
-
 }
