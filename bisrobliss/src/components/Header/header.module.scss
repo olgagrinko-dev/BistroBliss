@@ -26,8 +26,7 @@
 
     .info {
         display: flex;
-        flex-direction: row;
-        // justify-content: flex-end;
+        flex-direction: row;      
         align-items: center;
         height: 45px;
         background: #474747;
@@ -92,10 +91,11 @@
 
         .logo {
             background-image: url(../../../public/assets/Header/logo.svg);
-            background-repeat: no-repeat;           
+            background-repeat: no-repeat;
+            // background-size: cover;
             width: 56px;
             height: 56px;
-            margin-right: 8px;            
+            margin-right: 8px;
         }
 
         h1 {
@@ -103,7 +103,7 @@
             font: 600 42px Playfair Display;
             font-style: italic;
             margin-right: 340px;
-            width: 211px;
+            // width: 211px;
         }
 
         .elemnavig {
@@ -115,12 +115,11 @@
         }
 
         .btnhed {
-            width: 147px;
             border-radius: 118px;
             border: 1.5px solid var(--neutral-07, #2C2F24);
             padding: 12px 24px;
             color: var(--neutral-07, #182226);
-            text-align: right;
+            text-align: center;
             font: 700 16px DM Sans;
         }
     }

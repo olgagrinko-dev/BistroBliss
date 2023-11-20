@@ -59,19 +59,21 @@
             .pages,
             .utilitypages {
                 display: flex;
-                flex-direction: column;
-                margin-bottom: 20px;
+                flex-direction: column; 
+                gap: 40px;           
 
                 h2 {
                     color: var(--neutral-01, #FFF);
-                    font: 700 16px DM Sans;
-                    margin-bottom: 40px;
+                    font: 700 16px DM Sans;                    
                 }
 
                 .elempape,
                 .elemutilitypages {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
                     color: var(--neutral-03, #DBDFD0);
-                    font: 400 16px DM Sans;
+                    font: 400 16px DM Sans;                   
                 }
             }
         }
@@ -87,9 +89,14 @@
             }
 
             .imges {
-                display: flex;
-                flex-wrap: wrap;
-                // gap: 10px;
+                display: flex;               
+                gap: 10px;
+
+                .block{
+                    display: flex; 
+                    flex-direction: column;              
+                    gap: 10px;
+                }
 
                 .img1 {
                     @include image-block(url(../../../public/assets/Footer/img1.svg));

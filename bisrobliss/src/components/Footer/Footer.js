@@ -2,7 +2,6 @@ import style from '../Footer/footer.module.scss';
 
 export default function Footer() {
 
-
     return (
         <div className={style.footer}>
             <section className={style.info}>
@@ -22,9 +21,9 @@ export default function Footer() {
                     <div className={style.pages}>
                         <h2>Pages</h2>
                         <div className={style.colonpape}>
-                        <div className={style.elempape}>
-                            {['Home', 'About', 'Menu', 'Pricing', 'Blog', 'Contact', 'Delivery'].map((el, index) => <p key={index}>{el}</p>)}
-                        </div>
+                            <div className={style.elempape}>
+                                {['Home', 'About', 'Menu', 'Pricing', 'Blog', 'Contact', 'Delivery'].map((el, index) => <p key={index}>{el}</p>)}
+                            </div>
 
                         </div>
                     </div>

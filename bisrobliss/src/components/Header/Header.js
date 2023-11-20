@@ -24,12 +24,12 @@ export default function Header() {
             </div>
             <div className={style.navig}>
                 <div className={style.logo}></div>
-                <h1>Bistro Bliss</h1>
+                <h1>Bistro_Bliss</h1>
                 <div className={style.elemnavig}>
                     {['Home', 'About', 'Menu'].map((el, index) => <p key={index}>{el}</p>)}
                 </div>
 
-                <div className={style.btnhed}>Book A Table</div>
+                <div className={style.btnhed}>Book_A_Table</div>
             </div>
         </div>
     )
