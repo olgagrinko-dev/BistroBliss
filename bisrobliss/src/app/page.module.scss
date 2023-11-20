@@ -20,13 +20,13 @@
 .main {
     display: flex;
     flex-direction: column;
-    max-width: 1600px;
+    max-width: 1293px;
     margin: auto;
 
     .title {
         background-image: url(../../public/assets/HomePage/main.svg);
         background-repeat: no-repeat;
-        width: 1600px;
+        width: 1293px;
         height: 800px;
 
         .text {
@@ -79,7 +79,7 @@
 
     .blockmenu {
         background: var(--neutral-01, #FFF);
-        width: 1600px;
+        width: 1293px;
         height: 712px;
 
         h1 {
@@ -151,7 +151,7 @@
 
     .services {
         background: #F9F9F7;
-        width: 1600px;
+        width: 1293px;
         height: 868px;
 
         h1 {
@@ -172,7 +172,6 @@
             .birthdays,
             .weddings,
             .event {
-
                 width: 306px;
                 height: 443px;
 
@@ -209,11 +208,8 @@
                         font: 400 16px DM Sans;
                         width: 230px;
                     }
-
                 }
-
             }
-
         }
     }
 }

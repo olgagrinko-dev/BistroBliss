@@ -6,27 +6,15 @@
     height: 27px;
 }
 
-@font-face {
-    font-family: 'DM Sans';
-    src: url(../../../public/fonts/DMSans-Bold.ttf) format('truetype'),
-        url(../../../public/fonts/DMSans-Medium.ttf) format('truetype'),
-        url(../../../public/fonts/DMSans-SemiBold.ttf) format('truetype'),
-        url(../../../public/fonts/DMSans_24pt-Regular.ttf) format('truetype');
-    font-family: 'Playfair Display';
-    src: url(../../../public/fonts/PlayfairDisplay-Medium.ttf) format('truetype'),
-        url(../../../public/fonts/PlayfairDisplay-Regular.ttf) format('truetype'),
-        url(../../../public/fonts/PlayfairDisplay-SemiBoldItalic.ttf) format('truetype');
-}
-
 .header {
     display: flex;
     flex-direction: column;
-    max-width: 1600px;
+    max-width: 1293px;
     margin: auto;
 
     .info {
         display: flex;
-        flex-direction: row;      
+        flex-direction: row;
         align-items: center;
         height: 45px;
         background: #474747;
@@ -60,8 +48,8 @@
 
         .images {
             display: flex;
+            justify-content: space-between;
             gap: 8px;
-            margin-left: 831px;
 
             .imgtwitter {
                 @include image-block(url(../../../public/assets/Header/twit.svg));
@@ -84,6 +72,7 @@
     .navig {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         height: 84px;
         background: #F9F9F7;
@@ -102,16 +91,13 @@
             color: #474747;
             font: 600 42px Playfair Display;
             font-style: italic;
-            margin-right: 340px;
-            // width: 211px;
         }
 
         .elemnavig {
             display: flex;
             color: var(--neutral-07, #2C2F24);
             font: 500 16px DM Sans;
-            gap: 40px;
-            margin-right: 340px;
+            gap: 40px;     
         }
 
         .btnhed {

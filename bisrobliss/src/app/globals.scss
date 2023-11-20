@@ -1,10 +1,51 @@
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../../public/fonts/DMSans_24pt-Regular.ttf) format('truetype'); 
+  font-weight: 400; 
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../../public/fonts/DMSans-Medium.ttf) format('truetype'); 
+  font-weight: 500; 
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../../public/fonts/DMSans-SemiBold.ttf) format('truetype'); 
+  font-weight: 600; 
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../../public/fonts/DMSans-Bold.ttf) format('truetype'); 
+  font-weight: 700;  
+}
+
+@font-face {  
+  font-family: 'Playfair Display';
+  src: url(../../public/fonts/PlayfairDisplay-Regular.ttf) format('truetype');  
+  font-weight: 400; 
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../../public/fonts/PlayfairDisplay-Medium.ttf) format('truetype');  
+  font-weight: 500; 
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../../public/fonts/PlayfairDisplay-SemiBoldItalic.ttf) format('truetype');
+  font-weight: 600; 
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'DM Sans';
-  font-family: 'Playfair Display';
-  font-style: normal;  
+  font-style: normal;
 }
 
 body {

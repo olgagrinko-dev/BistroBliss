@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import style from '../Header/header.module.scss';
 
 export default function Header() {
@@ -24,12 +25,16 @@ export default function Header() {
             </div>
             <div className={style.navig}>
                 <div className={style.logo}></div>
-                <h1>Bistro_Bliss</h1>
+                <h1>Bistro Bliss</h1>
                 <div className={style.elemnavig}>
-                    {['Home', 'About', 'Menu'].map((el, index) => <p key={index}>{el}</p>)}
+                    {/* {['home', 'about', 'menu'].map((el, index) => <p key={index}><Link href={el}>{el}</Link></p>)} */}
+                    <p ><Link href='/'>home</Link></p>
+                    <p><Link href='/about'>about</Link></p>
+                    <p><Link href='/'>menu</Link></p>
+
                 </div>
 
-                <div className={style.btnhed}>Book_A_Table</div>
+                <div className={style.btnhed}>Book A Table</div>
             </div>
         </div>
     )
