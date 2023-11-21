@@ -6,8 +6,8 @@ export default function Homepage() {
 
       <section className={style.title}>
         <div className={style.text}>
-          <h2>Best food for
-            your taste</h2>
+          <h1>Best food for
+            your taste</h1>
           <p>Discover delectable cuisine and unforgettable moments
             in our welcoming, culinary haven.</p>
           <div className={style.btns}>

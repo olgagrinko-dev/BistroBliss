@@ -71,9 +71,10 @@
                 .elemutilitypages {
                     display: flex;
                     flex-direction: column;
-                    gap: 20px;
                     color: var(--neutral-03, #DBDFD0);
-                    font: 400 16px DM Sans;                   
+                    font: 400 16px DM Sans;   
+                    width: 150px;                
+                    gap: 20px;
                 }
             }
         }
@@ -89,7 +90,8 @@
             }
 
             .imges {
-                display: flex;               
+                display: flex;   
+                flex-wrap: wrap;            
                 gap: 10px;
 
                 .block{
