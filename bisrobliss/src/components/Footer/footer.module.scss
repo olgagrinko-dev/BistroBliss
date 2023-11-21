@@ -10,21 +10,21 @@
 .footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 1293px;
-    height: 778px;
+    width: 1293px;
     margin: auto;
+    padding: 120px 0;
     background: #474747;
 
     .info {
-        display: inline-flex;
-        align-items: flex-start;
-        padding: 120px 152px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
         gap: 135px;
-
+        
         .bistrobliss {
             display: flex;
             flex-direction: column;
+            width: 293px;
             gap: 30px;
 
             .logo {
@@ -32,48 +32,49 @@
                 gap: 5px;
 
                 .imglogo {
-                    background-image: url(../../../public/assets/Footer/logo.svg);
+                    background-image: url(../Footer/assets/Footer/logo.svg);
                     background-repeat: no-repeat;
+                    background-size: contain;
                     width: 56px;
                     height: 55px;
                 }
 
                 h1 {
-                    color: #FFF;
                     font: 600 32px Playfair Display;
                     font-style: italic;
+                    color: #FFF;
                 }
             }
 
             p {
-                width: 240px;
-                color: var(--neutral-04, #ADB29E);
                 font: 400 16px DM Sans;
+                color: var(--neutral-04, #ADB29E);
             }
         }
 
         .navig {
             display: flex;
-            gap: 120px;
+            justify-content: space-between;
+            gap: 100px;
 
             .pages,
             .utilitypages {
                 display: flex;
-                flex-direction: column; 
-                gap: 40px;           
+                flex-direction: column;
+                gap: 40px;
 
                 h2 {
+                    font: 700 16px DM Sans;
                     color: var(--neutral-01, #FFF);
-                    font: 700 16px DM Sans;                    
                 }
 
                 .elempape,
                 .elemutilitypages {
                     display: flex;
                     flex-direction: column;
+                    font: 400 16px DM Sans;
                     color: var(--neutral-03, #DBDFD0);
-                    font: 400 16px DM Sans;   
-                    width: 150px;                
+                    width: 150px;
                     gap: 20px;
                 }
             }
@@ -82,52 +83,47 @@
         .link {
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 40px;      
 
             h2 {
-                color: var(--neutral-01, #FFF);
                 font: 700 16px DM Sans;
+                color: var(--neutral-01, #FFF);
             }
 
             .imges {
-                display: flex;   
-                flex-wrap: wrap;            
-                gap: 10px;
-
-                .block{
-                    display: flex; 
-                    flex-direction: column;              
-                    gap: 10px;
-                }
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;            
 
                 .img1 {
-                    @include image-block(url(../../../public/assets/Footer/img1.svg));
+                    @include image-block(url(../Footer/assets/Footer/img1.svg));
                 }
 
                 .img2 {
-                    @include image-block(url(../../../public/assets/Footer/img2.svg));
+                    @include image-block(url(../Footer/assets/Footer/img2.svg));
                 }
 
                 .img3 {
-                    @include image-block(url(../../../public/assets/Footer/img3.svg));
+                    @include image-block(url(../Footer/assets/Footer/img3.svg));
                 }
 
                 .img4 {
-                    @include image-block(url(../../../public/assets/Footer/img4.svg));
+                    @include image-block(url(../Footer/assets/Footer/img4.svg));
                 }
             }
         }
     }
 
     .line {
-        width: 1296px;
+        width: 1293px;
         height: 1px;
         background: #414536;
+        margin-bottom: 30px;
     }
 
     h3 {
-        color: var(--neutral-04, #ADB29E);
         font: 400 16 px DM Sans;
+        color: var(--neutral-04, #ADB29E);
         margin: auto;
     }
 }

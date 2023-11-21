@@ -38,17 +38,14 @@ export default function Footer() {
                 <div className={style.link}>
                     <h2>Follow Us On Instagram</h2>
                     <div className={style.imges}>
-                        <div className={style.block}>
-                            <div className={style.img1}></div>
-                            <div className={style.img3}></div>
-                        </div>
-                        <div className={style.block}>
-                            <div className={style.img2}></div>
-                            <div className={style.img4}></div>
-                        </div>
+                        <div className={style.img1}></div>
+                        <div className={style.img3}></div>
+                        <div className={style.img2}></div>
+                        <div className={style.img4}></div>
                     </div>
                 </div>
             </section>
+            
             <div className={style.line}></div>
             <h3>Copyright © 2023 Hashtag Developer. All Rights Reserved</h3>
         </div>
