@@ -8,9 +8,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 90px;
+        background: var(--neutral-02, #F9F9F7);
         margin: auto;
         padding: 120px 0;
+        gap: 90px;
 
         .imgAbout {
             background-image: url(../about/assets/img111.png);
@@ -48,7 +49,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1293px;
+        background: #FFF;
+        width: 1293px;    
+        padding: 138px 0; 
 
         .statisticText {
             display: flex;
@@ -76,23 +79,25 @@
                 .item2,
                 .item3,
                 .item4 {
+                    display: flex;
+                    flex-direction: column;
                     width: 293px;
                     padding: 30px 0;
                     border-radius: 8px;
-                    border: 1px solid var(--neutral-03, #DBDFD0);
-                    background: var(--neutral-01, #FFF);
-                    text-align: center;
-
+                    border: 1px solid var(--neutral-03, #DBDFD0);                 
+                    text-align: center;   
+                    gap: 15px;    
+                      
                     h2 {
+                        font: 500 55px Playfair Display;
                         color: var(--neutral-07, #2C2F24);
                         text-align: center;
-                        font: 500 55px Playfair Display;
                     }
 
                     p {
+                        font: 500 18px DM Sans;
                         color: var(--neutral-06, #414536);
-                        text-align: center;                       
-                        font-family: 500 18px DM Sans;                        
+                        text-align: center;
                     }
                 }
             }
@@ -102,6 +107,7 @@
             background-image: url(../about/assets/img222.svg);
             background-repeat: no-repeat;
             background-size: contain;
+            border-radius: 12px;
             width: 555px;
             height: 680px;
         }

@@ -25,6 +25,7 @@ export default function About() {
 
             <div className={style.statistic}>
                 <div className={style.statisticText}>
+
                     <h1>
                         A little information
                         for our valuable guest
@@ -34,6 +35,7 @@ export default function About() {
                         overall experience. Our staff, renowned for their warmth and dedication,
                         strives to make every visit an unforgettable event.
                     </p>
+                    
                     <div className={style.statisticBlock}>
                         <div className={style.item1}>
                             <h2>3</h2>
