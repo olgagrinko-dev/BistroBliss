@@ -35,7 +35,7 @@ export default function About() {
                         overall experience. Our staff, renowned for their warmth and dedication,
                         strives to make every visit an unforgettable event.
                     </p>
-                    
+
                     <div className={style.statisticBlock}>
                         <div className={style.item1}>
                             <h2>3</h2>
