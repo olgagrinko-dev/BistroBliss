@@ -22,6 +22,10 @@ export default function Menu() {
     { id: 8, title: 'Classic Waffles', description: 'Made with eggs, lettuce, salt, oil and other ingredients.', price: '$ 12.99', img: img8 }
     ]
 
+    function getResult(event){
+        console.log(event.currentTarget);
+    }
+
     return (
         <div className={style.mainMenu}>
             <div className={style.menuText}>
@@ -33,7 +37,7 @@ export default function Menu() {
             </div>
 
             <div className={style.container}>
-                {array.map((elem) => <div className={style.item} >
+                {array.map((elem) => <div className={style.item} onClick={getResult} >
                     <div><Image src={elem.img} /></div>
                     <div className={style.containerText}>
                     <p className={style.colorelem}>{elem.price}</p>                    
