@@ -9,115 +9,129 @@
 .header {
     display: flex;
     flex-direction: column;
-    width: 1293px;
+    // width: 1293px;
     margin: auto;
 
-    .info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .colorinfo {
         background: #474747;
-        padding: 9px 0;
+        margin: auto;
 
-        .contact {
+        .info {
             display: flex;
             flex-direction: row;
-            gap: 25px;
+            justify-content: space-between;
+            align-items: center;
+            width: 1293px;
+            background: #474747;
+            padding: 9px 0;
 
-            .phone,
-            .mail {
+            .contact {
                 display: flex;
+                flex-direction: row;
+                gap: 25px;
+
+                .phone,
+                .mail {
+                    display: flex;
+                    gap: 8px;
+
+                    p {
+                        font: 400 16px DM Sans;
+                        color: var(--neutral-02, #F9F9F7);
+                    }
+
+                    .imgphone {
+                        background-image: url(../Header/assets/Header/phone.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    .imgmail {
+                        background-image: url(../Header/assets/Header/mail.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+
+            .images {
+                display: flex;
+                justify-content: space-between;
                 gap: 8px;
 
-                p {
-                    font: 400 16px DM Sans;
-                    color: var(--neutral-02, #F9F9F7);
+                .imgtwitter {
+                    @include image-block(url(../Header/assets/Header/twit.svg));
                 }
 
-                .imgphone {
-                    background-image: url(../Header/assets/Header/phone.svg);
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    width: 18px;
-                    height: 18px;
+                .imgfacebook {
+                    @include image-block(url(../Header/assets/Header/faceb.svg));
                 }
 
-                .imgmail {
-                    background-image: url(../Header/assets/Header/mail.svg);
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    width: 18px;
-                    height: 18px;
+                .imgpinstagram {
+                    @include image-block(url(../Header/assets/Header/inst.svg));
+                }
+
+                .imgcompan {
+                    @include image-block(url(../Header/assets/Header/compan.svg));
                 }
             }
         }
 
-        .images {
-            display: flex;
-            justify-content: space-between;
-            gap: 8px;
-
-            .imgtwitter {
-                @include image-block(url(../Header/assets/Header/twit.svg));
-            }
-
-            .imgfacebook {
-                @include image-block(url(../Header/assets/Header/faceb.svg));
-            }
-
-            .imgpinstagram {
-                @include image-block(url(../Header/assets/Header/inst.svg));
-            }
-
-            .imgcompan {
-                @include image-block(url(../Header/assets/Header/compan.svg));
-            }
-        }
     }
 
-    .navig {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .colornavig {
         background: #F9F9F7;
-        padding: 9px 0;
-
-        .logomain {
+        margin: auto;
+        .navig {
             display: flex;
             flex-direction: row;
-            gap: 8px;
+            justify-content: space-between;
+            align-items: center;
+            background: #F9F9F7;
+            width: 1293px;
+            padding: 9px 0;
 
-            .logo {
-                background-image: url(../Header/assets/Header/logo.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 56px;
-                height: 56px;
+            .logomain {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+
+                .logo {
+                    background-image: url(../Header/assets/Header/logo.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 56px;
+                    height: 56px;
+                }
+
+                h1 {
+                    font: 600 42px Playfair Display;
+                    font-style: italic;
+                    color: #474747;
+                }
             }
 
-            h1 {
-                font: 600 42px Playfair Display;
-                font-style: italic;
-                color: #474747;
+            .elemnavig {
+                display: flex;
+                font: 500 16px DM Sans;
+                color: var(--neutral-07, #2C2F24);
+                gap: 40px;
             }
-        }
 
-        .elemnavig {
-            display: flex;
-            font: 500 16px DM Sans;
-            color: var(--neutral-07, #2C2F24);
-            gap: 40px;
-        }
-
-        .btnhed {
-            border-radius: 118px;
-            border: 1.5px solid var(--neutral-07, #2C2F24);
-            color: var(--neutral-07, #182226);
-            font: 700 16px DM Sans;
-            text-align: center;
-            padding: 12px 24px;
+            .btnhed {
+                border-radius: 118px;
+                border: 1.5px solid var(--neutral-07, #2C2F24);
+                color: var(--neutral-07, #182226);
+                font: 700 16px DM Sans;
+                text-align: center;
+                padding: 12px 24px;
+            }
         }
     }
+
+
 }
