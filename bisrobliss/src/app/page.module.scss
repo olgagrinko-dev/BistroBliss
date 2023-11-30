@@ -17,194 +17,204 @@
     margin-bottom: 30px;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    width: 1293px;
-    margin: auto;
+.colormain {
+    background: #F9F9F7;
+    
+    .main {
+        display: flex;
+        flex-direction: column;        
+        margin: auto;
 
-    .title {
-        background-image: url(../../public/assets/HomePage/main.svg);
-        background-repeat: no-repeat;
-        width: 1293px;
-        height: 800px;
+        .title {
+            background-image: url(../../public/assets/HomePage/main.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;          
+            height: 800px;
 
-        .text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: auto;
-            margin-top: 227px;
-            gap: 32px;
-
-            h1 {
-                width: 667px;
-                font: 400 100px Playfair Display;
-                color: var(--neutral-07, #2C2F24);
-                text-align: center;
-            }
-
-            p {
-                width: 537px;
-                font: 400 20px DM Sans;
-                color: var(--neutral-07, #2C2F24);
-                text-align: center;
-            }
-
-            .btns {
+            .text {
                 display: flex;
-                gap: 16px;
+                flex-direction: column;
+                align-items: center;
+                margin: auto;
+                margin-top: 227px;
+                gap: 32px;
 
-                .btnbron {
-                    border-radius: 118px;
-                    border : none;
-                    background: #AD343E;
-                    font: 700 16px DM Sans;
-                    color: var(--neutral-01, #FFF);
-                    text-align: right;
-                    padding: 20px 32px;
-                }
-
-                .btnmenu {
-                    border-radius: 118px;
-                    border: 1.5px solid var(--neutral-07, #2C2F24);
-                    font: 700 16px DM Sans;
-                    color: var(--neutral-07, #182226);
-                    text-align: right;
-                    padding: 20px 32px;
-                }
-            }
-        }
-    }
-
-    .blockmenu {
-        background: var(--neutral-01, #FFF);
-        width: 1293px;
-        height: 712px;
-
-        h1 {
-            font: 500 55px Playfair Display;
-            color: var(--neutral-07, #2C2F24);
-            text-align: center;
-            margin: auto;
-            margin-top: 92px;
-            margin-bottom: 64px;
-        }
-
-        .foodselection {
-            display: flex;           
-            gap:24px;         
-
-            .breakfast,
-            .maindishes,
-            .drinks,
-            .desserts {
-                border-radius: 12px;
-                border: 1.5px solid var(--neutral-03, #DBDFD0);
-                background: var(--neutral-01, #FFF);
-                width: 306px;
-                height: 375px;               
-                padding: 34px;
-
-                .imgbreakfast {
-                    @include image-block(url(../../public/assets/HomePage/tea.svg));
-                }
-
-                .imgmaindishes {
-                    @include image-block(url(../../public/assets/HomePage/icon2.svg));
-                }
-
-                .imgdrinks {
-                    @include image-block(url(../../public/assets/HomePage/icon3.svg));
-                }
-
-                .imgdesserts {
-                    @include image-block(url(../../public/assets/HomePage/icon4.svg));
-                }
-
-                h2 {
-                    font: 700 24px DM Sans;
+                h1 {
+                    width: 667px;
+                    font: 400 100px Playfair Display;
                     color: var(--neutral-07, #2C2F24);
                     text-align: center;
-                    margin-bottom: 15px;
                 }
 
                 p {
-                    font: 400 16px DM Sans;
-                    color: var(--neutral-06, #414536);
+                    width: 537px;
+                    font: 400 20px DM Sans;
+                    color: var(--neutral-07, #2C2F24);
                     text-align: center;
-                    width: 210px;
-                    margin-bottom: 30px;
                 }
 
-                .btnblock {
-                    font: 700 16px DM Sans;                   
-                    color: #AD343E;
-                    text-align: center;
-                    margin: auto;
-                    border : none
+                .btns {
+                    display: flex;
+                    gap: 16px;
+
+                    .btnbron {
+                        border-radius: 118px;
+                        border: none;
+                        background: #AD343E;
+                        font: 700 16px DM Sans;
+                        color: var(--neutral-01, #FFF);
+                        text-align: right;
+                        padding: 20px 32px;
+                    }
+
+                    .btnmenu {
+                        border-radius: 118px;
+                        border: 1.5px solid var(--neutral-07, #2C2F24);
+                        font: 700 16px DM Sans;
+                        color: var(--neutral-07, #182226);
+                        text-align: right;
+                        padding: 20px 32px;
+                    }
                 }
             }
         }
-    }
 
-    .services {
-        background: #F9F9F7;
-        width: 1293px;
-        height: 868px;
+        .colorblockmenu {
+            background: var(--neutral-01, #FFF);
 
-        h1 {
-            font: 500 55px Playfair Display;
-            color: var(--neutral-07, #2C2F24);
-            width: 600px;
-            margin-top: 120px;           
-            margin-bottom: 64px;
+            .blockmenu {
+                background: var(--neutral-01, #FFF);
+                margin: auto;
+                width: 1293px;
+                height: 712px;
+
+                h1 {
+                    font: 500 55px Playfair Display;
+                    color: var(--neutral-07, #2C2F24);
+                    text-align: center;
+                    margin: auto;
+                    margin-top: 92px;
+                    margin-bottom: 64px;
+                }
+
+                .foodselection {
+                    display: flex;
+                    gap: 24px;
+
+                    .breakfast,
+                    .maindishes,
+                    .drinks,
+                    .desserts {
+                        border-radius: 12px;
+                        border: 1.5px solid var(--neutral-03, #DBDFD0);
+                        background: var(--neutral-01, #FFF);
+                        width: 306px;
+                        height: 375px;
+                        padding: 34px;
+
+                        .imgbreakfast {
+                            @include image-block(url(../../public/assets/HomePage/tea.svg));
+                        }
+
+                        .imgmaindishes {
+                            @include image-block(url(../../public/assets/HomePage/icon2.svg));
+                        }
+
+                        .imgdrinks {
+                            @include image-block(url(../../public/assets/HomePage/icon3.svg));
+                        }
+
+                        .imgdesserts {
+                            @include image-block(url(../../public/assets/HomePage/icon4.svg));
+                        }
+
+                        h2 {
+                            font: 700 24px DM Sans;
+                            color: var(--neutral-07, #2C2F24);
+                            text-align: center;
+                            margin-bottom: 15px;
+                        }
+
+                        p {
+                            font: 400 16px DM Sans;
+                            color: var(--neutral-06, #414536);
+                            text-align: center;
+                            width: 210px;
+                            margin-bottom: 30px;
+                        }
+
+                        .btnblock {
+                            font: 700 16px DM Sans;
+                            color: #AD343E;
+                            text-align: center;
+                            margin: auto;
+                            border: none
+                        }
+                    }
+                }
+            }
         }
 
-        .events {
-            display: flex;
-            justify-content: space-between;           
-            gap:24px;
+        .services {
+            background: #F9F9F7;
+            margin: auto;
+            width: 1293px;
+            height: 868px;
 
-            .caterings,
-            .birthdays,
-            .weddings,
-            .event {
-                width: 306px;
-                height: 443px;
+            h1 {
+                font: 500 55px Playfair Display;
+                color: var(--neutral-07, #2C2F24);
+                width: 600px;
+                margin-top: 120px;
+                margin-bottom: 64px;
+            }
 
-                .imgcaterings {
-                    @include image-block2(url(../../public/assets/HomePage/kebab.svg));
-                }
+            .events {
+                display: flex;
+                justify-content: space-between;
+                gap: 24px;
 
-                .imgbirthdays {
-                    @include image-block2(url(../../public/assets/HomePage/birthday.svg));
-                }
+                .caterings,
+                .birthdays,
+                .weddings,
+                .event {
+                    width: 306px;
+                    height: 443px;
 
-                .imgweddings {
-                    @include image-block2(url(../../public/assets/HomePage/happy.svg));
-                }
-
-                .imgevents {
-                    @include image-block2(url(../../public/assets/HomePage/group.svg));
-                }
-
-                .text {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-
-                    h2 {
-                        color: var(--neutral-07, #2C2F24);
-                        text-align: center;
-                        font: 700 24px DM Sans;
-                        margin-bottom: 15px;
+                    .imgcaterings {
+                        @include image-block2(url(../../public/assets/HomePage/kebab.svg));
                     }
 
-                    p {
-                        color: var(--neutral-06, #414536);
-                        font: 400 16px DM Sans;
-                        width: 230px;
+                    .imgbirthdays {
+                        @include image-block2(url(../../public/assets/HomePage/birthday.svg));
+                    }
+
+                    .imgweddings {
+                        @include image-block2(url(../../public/assets/HomePage/happy.svg));
+                    }
+
+                    .imgevents {
+                        @include image-block2(url(../../public/assets/HomePage/group.svg));
+                    }
+
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        h2 {
+                            font: 700 24px DM Sans;
+                            color: var(--neutral-07, #2C2F24);
+                            text-align: center;
+                            margin-bottom: 15px;
+                        }
+
+                        p {
+                            font: 400 16px DM Sans;
+                            color: var(--neutral-06, #414536);
+                            width: 230px;
+                        }
                     }
                 }
             }

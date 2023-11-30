@@ -1,0 +1,38 @@
+.colorCard {
+    background: var(--neutral-01, #FFF);
+
+    .mainCard {
+        display: flex;
+        flex-direction: row;
+        width: 1293px;
+        margin: auto;
+        gap: 90px;
+
+        .imgCard {
+            width: 645px;
+            height: 566px;
+        }
+
+        .textCard {
+            display: flex;
+            flex-direction: column;
+            width: 557px;
+            gap: 24px;
+
+            h1 {
+                font: 500 55px Playfair Display;
+                color: var(--neutral-07, #2C2F24);              
+            }
+
+            h2 {
+                font: 500 18px DM Sans;
+                color: var(--neutral-07, #2C2F24);
+            }
+
+            p {
+                font: 400 16px DM Sans;                
+                color: var(--neutral-06, #414536);
+            }
+        }
+    }
+}

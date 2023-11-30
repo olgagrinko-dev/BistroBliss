@@ -3,8 +3,8 @@ import style from '../Header/header.module.scss';
 
 export default function Header() {
     return (
-        <div className={style.header}>
-            <div className={style.colorinfo}>
+        <div className={style.colorinfo}>
+            <div className={style.header}>
 
                 <div className={style.info}>
                     <div className={style.contact}>
@@ -38,7 +38,7 @@ export default function Header() {
                     <div className={style.elemnavig}>
                         <p ><Link href='/'>home</Link></p>
                         <p><Link href='/about'>about</Link></p>
-                        <p><Link href='/'>menu</Link></p>
+                        <p><Link href='/menu'>menu</Link></p>
                     </div>
 
                     <div className={style.btnhed}>Book A Table</div>

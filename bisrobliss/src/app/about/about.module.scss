@@ -1,115 +1,123 @@
-.mainAbout {
-    display: flex;
-    flex-direction: column;
-    max-width: 1293px;
-    margin: auto;
+.colorAbout {
+    background: var(--neutral-02, #F9F9F7);
 
-    .wrap {
+    .mainAbout {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: var(--neutral-02, #F9F9F7);
+        flex-direction: column;       
         margin: auto;
-        padding: 120px 0;
-        gap: 90px;
 
-        .imgAbout {
-            background-image: url(../about/assets/img111.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 649px;
-            height: 616px;
-        }
-
-        .aboutText {
+        .wrap {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            width: 557px;
-            gap: 24px;
+            background: var(--neutral-02, #F9F9F7);
+            margin: auto;
+            padding: 120px 0;
+            gap: 90px;
 
-            h1 {
-                color: var(--neutral-07, #2C2F24);
-                font: 500 55px Playfair Display;
+            .imgAbout {
+                background-image: url(../about/assets/img111.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 649px;
+                height: 616px;
             }
 
-            h2 {
-                color: var(--neutral-07, #2C2F24);
-                font: 500 18px DM Sans;
-            }
-
-            p {
-                color: var(--neutral-06, #414536);
-                font: 400 16px DM Sans;
-            }
-        }
-    }
-
-    .statistic {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #FFF;
-        width: 1293px;    
-        padding: 138px 0; 
-
-        .statisticText {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 610px;
-            gap: 20px;
-
-            h1 {
-                color: var(--neutral-07, #2C2F24);
-                font: 500 55px Playfair Display;
-            }
-
-            p {
-                color: var(--neutral-06, #414536);
-                font: 400 16px DM Sans;
-            }
-
-            .statisticBlock {
+            .aboutText {
                 display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
+                flex-direction: column;
+                align-items: center;
+                width: 557px;
+                gap: 24px;
 
-                .item1,
-                .item2,
-                .item3,
-                .item4 {
-                    display: flex;
-                    flex-direction: column;
-                    width: 293px;
-                    padding: 30px 0;
-                    border-radius: 8px;
-                    border: 1px solid var(--neutral-03, #DBDFD0);                 
-                    text-align: center;   
-                    gap: 15px;    
-                      
-                    h2 {
-                        font: 500 55px Playfair Display;
-                        color: var(--neutral-07, #2C2F24);
-                        text-align: center;
-                    }
+                h1 {
+                    font: 500 55px Playfair Display;
+                    color: var(--neutral-07, #2C2F24);
+                }
 
-                    p {
-                        font: 500 18px DM Sans;
-                        color: var(--neutral-06, #414536);
-                        text-align: center;
-                    }
+                h2 {
+                    font: 500 18px DM Sans;
+                    color: var(--neutral-07, #2C2F24);
+                }
+
+                p {
+                    font: 400 16px DM Sans;
+                    color: var(--neutral-06, #414536);
                 }
             }
         }
 
-        .imgStatistic {
-            background-image: url(../about/assets/img222.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            border-radius: 12px;
-            width: 555px;
-            height: 680px;
+        .colorStatistic {
+            background: #FFF;
+
+            .statistic {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #FFF;
+                margin: auto;
+                width: 1293px;
+                padding: 138px 0;
+
+                .statisticText {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 610px;
+                    gap: 20px;
+
+                    h1 {
+                        font: 500 55px Playfair Display;
+                        color: var(--neutral-07, #2C2F24);
+                    }
+
+                    p {
+                        font: 400 16px DM Sans;
+                        color: var(--neutral-06, #414536);
+                    }
+
+                    .statisticBlock {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px;
+
+                        .item1,
+                        .item2,
+                        .item3,
+                        .item4 {
+                            display: flex;
+                            flex-direction: column;
+                            width: 293px;
+                            padding: 30px 0;
+                            border-radius: 8px;
+                            border: 1px solid var(--neutral-03, #DBDFD0);
+                            text-align: center;
+                            gap: 15px;
+
+                            h2 {
+                                font: 500 55px Playfair Display;
+                                color: var(--neutral-07, #2C2F24);
+                                text-align: center;
+                            }
+
+                            p {
+                                font: 500 18px DM Sans;
+                                color: var(--neutral-06, #414536);
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                .imgStatistic {
+                    background-image: url(../about/assets/img222.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border-radius: 12px;
+                    width: 555px;
+                    height: 680px;
+                }
+            }
         }
     }
 }
