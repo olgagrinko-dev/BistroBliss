@@ -1,17 +1,17 @@
 'use client'
 
-import style from '../[id]/id.module.scss';
+import style from '../../menu/[id]/id.module.scss';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import storage from '../../../storage/storage';
+import array from '../../../storage/storage';
 
 export default function Id() {
     const { id } = useParams();
     const [found, setFound] = useState({});
 
     useEffect(() => {
-        const result = storage.filter(el => el.id == id);
+        const result = array.filter(el => el.id == id);
         setFound(result[0]);
         console.log(result);
     }, []);

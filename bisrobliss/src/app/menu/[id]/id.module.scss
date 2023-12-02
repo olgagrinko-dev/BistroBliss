@@ -1,14 +1,14 @@
 .colorCard {
     background: var(--neutral-01, #FFF);
 
-    .mainCard {
-        display: flex;
-        flex-direction: row;
+    .mainCards {
+        display: flex;     
         width: 1293px;
         margin: auto;
+        padding: 85px 200px;
         gap: 90px;
 
-        .imgCard {
+        .img {
             width: 645px;
             height: 566px;
         }
@@ -16,7 +16,7 @@
         .textCard {
             display: flex;
             flex-direction: column;
-            width: 557px;
+            width: 600px;
             gap: 24px;
 
             h1 {

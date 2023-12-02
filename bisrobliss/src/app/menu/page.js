@@ -10,6 +10,7 @@ import img5 from './assets/img5.png';
 import img6 from './assets/img6.png';
 import img7 from './assets/img7.png';
 import img8 from './assets/img8.png';
+import Link from 'next/link';
 
 export default function Menu() {
     const array = [{ id: 1, title: 'Fried Eggs', description: 'Made with eggs, lettuce, salt, oil and other ingredients.', price: '$ 9.99', img: img1 },
@@ -22,7 +23,7 @@ export default function Menu() {
     { id: 8, title: 'Classic Waffles', description: 'Made with eggs, lettuce, salt, oil and other ingredients.', price: '$ 12.99', img: img8 }
     ]
 
-    function getResult(event){
+    function getResult(event) {
         console.log(event.currentTarget);
     }
 
@@ -37,14 +38,19 @@ export default function Menu() {
             </div>
 
             <div className={style.container}>
-                {array.map((elem) => <div className={style.item} onClick={getResult} >
-                    <div><Image src={elem.img} /></div>
-                    <div className={style.containerText}>
-                    <p className={style.colorelem}>{elem.price}</p>                    
-                    <h2>{elem.title}</h2>
-                    <p>{elem.description}</p>
-                    </div>                   
-                </div>)}
+
+                {array.map((elem) => <Link href={`/menu/${elem.id}`}>
+                        <div className={style.item} onClick={getResult} >
+                            <div><Image src={elem.img} /></div>
+                            <div className={style.containerText}>
+                                <p className={style.colorelem}>{elem.price}</p>
+                                <h2>{elem.title}</h2>
+                                <p>{elem.description}</p>
+                            </div>
+                        </div>
+                    </Link>
+                )}
+
             </div>
         </div>
     )
