@@ -19,13 +19,13 @@ export default function Id() {
     return (
         <div className={style.colorCard}>
             <div className={style.mainCards}>
-                <div className={style.imgCard}>
+                <div>
                     <Image className={style.img} src={found.img}></Image>
                 </div>
                 <div className={style.textCard}>
                     <h1>{found?.title}</h1>
-                    <h2>{found?.description}</h2>
-                    <p>{found?.price}</p>
+                    <p>{found?.description}</p>
+                    <p>Total: {found?.price}</p>
                 </div>
             </div>
         </div>
