@@ -101,10 +101,14 @@
                 }
 
                 .foodselection {
-                    display: flex;
+                    display: flex;                    
                     gap: 24px;
 
                     .itemMain {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                         border-radius: 12px;
                         border: 1.5px solid var(--neutral-03, #DBDFD0);
                         background: var(--neutral-01, #FFF);
@@ -140,7 +144,7 @@
                             font: 400 16px DM Sans;
                             color: var(--neutral-06, #414536);
                             text-align: center;
-                            width: 210px;
+                            width: 215px;
                             margin-bottom: 30px;
                         }
 
