@@ -28,9 +28,7 @@ export default function Menu() {
                             <p>{elem.description}</p>
                         </div>
                     </div>
-                </Link>
-                )}
-
+                </Link>)}
             </div>
         </div>
     )

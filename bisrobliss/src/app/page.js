@@ -28,7 +28,6 @@ export default function Homepage() {
   ]
 
   return (
-
     <div className={style.colormain}>
       <main className={style.main}>
 
@@ -59,8 +58,7 @@ export default function Homepage() {
                   <h2>{elem.title}</h2>
                   <p>{elem.description}</p>
                   <div className={style.btnblock}>Explore Menu</div>
-                </div>
-              )}
+                </div>)}
             </div>
           </section>
         </div>
@@ -75,8 +73,7 @@ export default function Homepage() {
                 <div><Image src={elem.img2} /></div>
                 <h2>{elem.event}</h2>
                 <p>{elem.description}</p>
-              </div>
-            )}
+              </div>)}
           </div>
         </section>
       </main>

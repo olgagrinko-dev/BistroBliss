@@ -80,11 +80,8 @@
                         display: flex;
                         flex-wrap: wrap;
                         gap: 20px;
-
-                        .item1,
-                        .item2,
-                        .item3,
-                        .item4 {
+                        
+                        .item{
                             display: flex;
                             flex-direction: column;
                             width: 293px;

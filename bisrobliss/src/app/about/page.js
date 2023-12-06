@@ -1,6 +1,11 @@
 import style from '../about/about.module.scss';
 
 export default function About() {
+    const array = [
+        { data: '3', title: 'Locations' }, { data: '1995', title: 'Founded' },
+        { data: '65+', title: 'Staff Members' }, { data: '100%', title: 'Satisfied Customers' }
+    ];
+
     return (
         <div className={style.colorAbout}>
 
@@ -40,28 +45,15 @@ export default function About() {
                             </p>
 
                             <div className={style.statisticBlock}>
-                                <div className={style.item1}>
-                                    <h2>3</h2>
-                                    <p>Locations</p>
-                                </div>
-                                <div className={style.item2}>
-                                    <h2>1995</h2>
-                                    <p>Founded</p>
-                                </div>
-                                <div className={style.item3}>
-                                    <h2>65+</h2>
-                                    <p>Staff Members</p>
-                                </div>
-                                <div className={style.item4}>
-                                    <h2>100%</h2>
-                                    <p>Satisfied Customers</p>
-                                </div>
+                                {array.map((elem) => <div className={style.item}>
+                                    <h2>{elem.data}</h2>
+                                    <p>{elem.title}</p>
+                                </div>)}
                             </div>
                         </div>
                         <div className={style.imgStatistic}></div>
                     </div>
                 </div>
-
             </section>
         </div>
     )
